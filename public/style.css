@@ -41,6 +41,27 @@ ul {
   margin: 1rem 0;
 }
 
+fieldset {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border: 2px solid #eee;
+}
+
+fieldset > legend {
+  font-weight: bold;
+}
+
+fieldset > label {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+fieldset > label > input {
+  width: auto;
+  margin: auto 0;
+  margin-right: 8px;
+}
+
 ul {
   list-style: square;
 }
@@ -63,6 +84,7 @@ textarea {
   border-radius: var(--radius);
   background: #eee;
   transition: 0.2s;
+  margin-bottom: 10px;
 }
 
 input:focus,
