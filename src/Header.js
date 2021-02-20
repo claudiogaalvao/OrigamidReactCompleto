@@ -1,10 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 const Sobre = () => {
     return (
-        <div>
-            Esse é o Header
-        </div>
+        <nav>
+            <NavLink to="/" end>Home</NavLink> | <NavLink to="sobre">Sobre</NavLink> | <NavLink to="login">Login</NavLink>
+        </nav>
     )
 }
 
