@@ -1,18 +1,18 @@
 import React from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { NavLink, useParams, Outlet } from 'react-router-dom'
 
 const Produto = () => {
     const params = useParams();
-    const location = useLocation();
-
-    console.log(location.pathname);
-    
-    const search = new URLSearchParams(location.search);
-    console.log(search.get('cor'));
     
     return (
         <div>
             <h1>Produto: {params.id}</h1>
+            <nav>
+                <NavLink to="" end>Descrição</NavLink>{' '}
+                <NavLink to="avaliacao">Avaliação</NavLink>{' '}
+                <NavLink to="customizado">Customizado</NavLink>
+            </nav>
+            <Outlet />
         </div>
     )
 }
